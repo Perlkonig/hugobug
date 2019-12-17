@@ -1,0 +1,15 @@
+baseURL = "/"
+
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "Hugo + Goldmark List Bug"
+theme = "hugo-theme-docdock-master"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
